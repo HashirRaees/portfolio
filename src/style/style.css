@@ -1,0 +1,357 @@
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Pacifico&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin:0;
+    padding:0p;
+}
+body{
+    background-color:black;
+}
+/*Nav bar*/
+.nav{
+    display:flex;
+    height:80px;
+    width:100%;
+    justify-content:space-around;
+    align-items:center;
+    position:sticky;
+    background-color:black;
+    top:0;
+    z-index:99;
+}
+.nav-head{
+    color:white;
+    font-family:'Pacifico';
+    font-size:30px;
+    font-weight:400;
+    transition:.3s;
+}
+.nav-head:hover{
+    text-shadow:10px 10px 20px rgb(158, 0, 0);
+    cursor:pointer;
+    color:red;
+}
+.nav-links{
+    display:flex;
+    gap:50px;
+    list-style:none;
+    font-size:22px;
+    font-family:'Inter';
+    font-weight:600;
+}
+.nav-links .link{
+    text-decoration:none;
+    color:white;
+    padding: .5rem .3rem;
+    border: 2px solid transparent;
+    transition:.3s;
+}
+.nav-links .link:hover{
+    border-top:1px solid red;
+    border-bottom:1px solid red;
+    color:red;
+}
+.nav-links .link:active{
+    border-top:1px solid red;
+    border-bottom:1px solid red;
+    color:red;
+}
+/*Hero section*/
+.section{
+    height:500px;
+    width:100%;
+    display:flex;
+    justify-content:space-evenly;
+    align-items:center;
+    margin-top: 50px;
+    /* background-color:aqua; */
+}
+.text{
+    height:355px;
+    display:flex;
+    cursor: default;
+    flex-direction: column;
+    padding: 10px;
+    animation:textmove;
+    animation-duration:2s;
+    position:relative;
+    animation-fill-mode:forwards;
+}
+@keyframes textmove{
+    0%{
+        opacity: 0;
+        transform: translateY(200px) scale(0.3);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0px) scale(1);
+    }}
+.profile{
+    border:2px transparent;
+    border-radius:50%;
+    animation:profilemove;
+    animation-fill-mode:forwards;
+    animation-duration:2s;
+}
+@keyframes profilemove{
+    0%{
+        opacity:0;
+        transform: translateZ(200px) scale(0.3);
+    }
+    100%{
+        opacity: 1;
+        transform: translateZ(0px) scale(1);
+        
+    }
+}
+.text h1{
+    font-family:'Heebo';
+    color:white;
+    font-weight:800;
+    font-size:25px;
+}
+.text span{
+    color:red;
+    font-weight:900;
+    font-size:25px;
+    font-family:'Pacifico';
+}
+.text p{
+    font-size:18px;
+    font-family:'Inter';
+    color:white;
+    line-height: 25px;
+}
+.text button{
+    width:30%;
+    margin-top:15px;
+    height:40px;
+    background-color:red;
+    border:none;
+    border-radius:10px;
+    transition:.3s;
+    padding:10px;
+}
+.btn-link{
+    color:white;
+    text-decoration:none;
+    font-size:15px;
+    font-weight:bold;
+}
+.text button:hover{
+    box-shadow:1px 1px 5px 6px rgb(139, 0, 0);
+    background-color:black;
+    border:2px solid red;
+    cursor:pointer;
+}
+.icons{
+    /* background-color:pink; */
+    height:50px;
+    width:100%;
+    margin-top:15px;
+    display:flex;
+    gap:15px;
+    padding:0px;
+}
+.insta{
+    transition:.3s;
+    margin-top:8px;
+    border-radius:18px;
+}
+.insta:hover{
+    color:black;
+    box-shadow:0px 0px 6px 0px red;
+}
+.linked{
+    transition:.3s;
+    margin-top:8px;
+    border-radius:15px;
+}
+.linked:hover{
+    color:black;
+    box-shadow:0px 0px 6px 0px red;
+}
+.git{
+    transition:.3s;
+    margin-top:8px;
+    border-radius:18px;
+}
+.git:hover{
+    color:black;
+    box-shadow:0px 0px 6px 0px red;
+}
+.face{
+    transition:.3s;
+    margin-top:8px;
+    border-radius:18px;
+}
+.face:hover{
+    color:black;
+    box-shadow:0px 0px 6px 0px red;
+    
+}
+
+/* Second section*/
+
+.second{
+    height:700px;
+    width:100%;
+    background-color:black;
+}
+
+/* Third Section*/
+.third{
+    height:600px;
+    width:100%;
+    background-color:black;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:90px;
+}
+.html{
+    height:150px;
+    width:10%;
+    display:flex;
+    justify-content:center;
+    flex-direction:column;
+    align-items:center;
+}
+.html .h1{
+    font-family:'Inter';
+    color:white;
+    font-weight:500;
+    transition:.3s;
+}
+.h1:hover{
+    color:red;
+    font-size:35px;
+    cursor:pointer;
+}
+.css{
+    height:150px;
+    width:10%;
+    display:flex;
+    justify-content:center;
+    flex-direction:column;
+    align-items:center;
+}
+.css h1{
+    font-family:'Inter';
+    color:white;
+    font-weight:500;
+    transition:.3s;
+}
+.java{
+    height:150px;
+    width:10%;
+    display:flex;
+    justify-content:center;
+    flex-direction:column;
+    align-items:center;
+}
+.java h1{
+    font-family:'Inter';
+    color:white;
+    font-weight:500;
+    transition:.3s;
+}
+.next{
+    height:150px;
+    width:10%;
+    display:flex;
+    justify-content:center;
+    flex-direction:column;
+    align-items:center;
+}
+.next h1{
+    font-family:'Inter';
+    color:white;
+    font-weight:500;
+    transition:.3s;
+}
+/*Fourth*/
+.fourth{
+    height:550px;
+    width:100%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+.fourth > .form{
+    height:400px;
+    width:50%;
+    background-color:black;
+    padding:30px;
+    display:flex;
+    flex-direction:column;
+    gap:5px;
+    align-items:flex-start;
+}
+.form label{
+    color:white;
+    font-family:'Inter';
+    padding:5px;
+}
+.form input{
+    height:30px;
+    border:none;
+    width:100%;
+    background-color:black;
+    border-bottom:.5px solid red;
+    color:rgb(255, 255, 255);
+    font-family:'Inter';
+    transition:.3s;
+    font-size:15px;
+}
+.form textarea{
+    border:none;
+    background-color:black;
+    border-bottom:.5px solid red;
+    height:80px;
+    width:100%;
+    color:white;
+    font-family:'Inter';
+    transition:.3s;
+}
+.form input,textarea:focus{
+    outline:none;
+    border:none;
+    border-bottom:.5px solid red;
+}
+.form input[type=submit]{
+    background-color:red;
+    border:none;
+    height:40px;
+    width:60%;
+    align-self:center;
+    margin-top:20px;
+    cursor:pointer;
+    transition:.3s;
+    border-radius:10px;
+    font-family:'Inter';
+    font-size:15px;
+    color:white;
+    font-weight:500;
+}
+.form input[type=submit]:hover{
+    background-color:black;
+    border:1px solid red;
+    box-shadow:0px 0px 6px red;
+}
+.footer{
+    display:flex;
+    height:80px;
+    width:100%;
+    background-color:rgb(0, 0, 0);
+    justify-content:center;
+    align-items:center;
+}
+.footer h1{
+    font-family:'Heebo';
+    font-size:20px;
+    color:white;
+    font-weight:500;
+}
