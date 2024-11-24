@@ -6,6 +6,7 @@ export default function Page(){
         <>
         <hr/>
         <section className="third" id="skills">
+            <h1 className="skills">Skills</h1>
             <div className="html">
                 <RiHtml5Fill size={120} color="red" className="html5" />
                 <h1 className="h1">Html 5</h1>

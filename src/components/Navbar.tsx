@@ -7,7 +7,7 @@ export default function Navbar(){
             <h1 className="nav-head">Hashir Raees</h1>
         <ul className="nav-links">
             <li><Link className="link" href="/">Home</Link></li>
-            <li><Link className="link" href="#portfolio">Projects</Link></li>
+            <li><Link className="link" href="#education">Education</Link></li>
             <li><Link className="link" href="#skills">Skills</Link></li>
             <li><Link className="link" href="#contact">Contact</Link></li>
         </ul>
